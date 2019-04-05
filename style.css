@@ -1,0 +1,48 @@
+h1
+{
+    text-align: center;
+    color: grey
+}
+.address
+{
+    text-align: center;
+    font-size: small;
+}
+.surname
+{
+    text-align: center;
+    color: black;
+}
+h5
+{
+    text-align: center; 
+    color: green;
+}
+div
+{
+    padding-left: 120px;
+    padding-right: 120px;
+}
+td
+{
+    color: green;
+    padding-left: 20px;
+    font-weight: bold;
+    font-size: 15;   
+}
+.data
+{
+    color: #4f4d4d;
+}
+.date
+{
+    color:#4f4d4d; 
+}
+li
+{
+    color: green;
+}
+.point
+{
+    color: #4f4d4d;
+}
