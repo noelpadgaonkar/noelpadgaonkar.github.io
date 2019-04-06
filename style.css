@@ -46,3 +46,31 @@ li
 {
     color: #4f4d4d;
 }
+ul.a 
+{
+    list-style-position: outside;
+}
+.collapse 
+{
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+    padding: 4px;
+    width: auto;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}  
+.collapse:hover 
+{
+    background-color: #4f4d4d; 
+} 
+.panel 
+{
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+}

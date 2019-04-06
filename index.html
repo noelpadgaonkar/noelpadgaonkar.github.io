@@ -11,8 +11,8 @@
 <hr \>
 <body>
     <div><i>To obtain a creative and challenging position in your organization that gives me an opportunity for self-improvement and leadership, while contributing to the symbolic growth of the organization with my technical, innovative and logical skills.</i>
-
-    <h3>PERSONAL DETAILS</h3>
+    <h3 class="collapse">PERSONAL DETAILS</h3>
+    <div class="panel">
     <table>    
         <tr>
             <td>DATE OF BIRTH: <span class="data">15 MAY, 1995</span></td>
@@ -27,8 +27,10 @@
             <td>HOBBIES: <span class="data">WATCHING MOVIES AND SITCOMS, LISTENING TO MUSIC, PLAYING THE PIANO,PHOTOGRAPHY, YOUTUBE</span></td>
         </tr>        
     </table>
+    </div>
 
-    <h3>EXPERIENCE</h3>
+    <h3 class="collapse">EXPERIENCE</h3>
+    <div class="panel">
     <table>
         <table>
             <tr>
@@ -54,8 +56,10 @@
             </tr>
         </table>      
     </table>
+    </div>
 
-    <h3>EDUCATION</h3>
+    <h3 class="collapse">EDUCATION</h3>
+    <div class="panel">
     <table>
         <table>
             <tr>
@@ -93,8 +97,10 @@
             </tr>
         </table>        
     </table>
+    </div>
 
-    <h3>SKILLS</h3>
+    <h3 class="collapse">SKILLS</h3>
+    <div class="panel">
     <ul class="a">
     <table>
         <tr>
@@ -119,8 +125,10 @@
         </tr>
     </table>
     </ul>
+    </div>
 
-    <h3>PROJECTS</h3>
+    <h3 class="collapse">PROJECTS</h3>
+    <div class="panel">
     <table>
         <table>
             <tr>
@@ -206,8 +214,10 @@
             </tr>
         </table>        
     </table>
+    </div>
 
-    <h3>CO-CURRICULAR ACTIVITIES</h3>
+    <h3 class="collapse">CO-CURRICULAR ACTIVITIES</h3>
+    <div class="panel">
     <ul class="a">
     <table>
         <tr>
@@ -233,8 +243,10 @@
         </tr>
     </table>
     </ul>
+    </div>
 
-    <h3>EXTRA-CURRICULAR ACTIVITIES</h3>
+    <h3 class="collapse">EXTRA-CURRICULAR ACTIVITIES</h3>
+    <div class="panel">
     <ul class="a">
     <table>
         <tr>
@@ -258,5 +270,21 @@
     </table>
     </ul>
     </div>
+    </div>
+    <script>
+        var acc = document.getElementsByClassName("collapse");
+        var i;       
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+              panel.style.display = "none";
+            } else {
+              panel.style.display = "block";
+            }
+          });
+        }
+    </script>
 </body>
 </html>
