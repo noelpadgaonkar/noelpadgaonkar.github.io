@@ -74,3 +74,19 @@ ul.a
     background-color: white;
     overflow: hidden;
 }
+.down 
+{
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    color: white;
+    float: right;
+    margin-right: 5;
+    margin-top: 2;
+  }
+i 
+{
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
