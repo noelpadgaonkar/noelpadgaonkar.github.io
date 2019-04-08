@@ -49,6 +49,7 @@ li
 ul.a 
 {
     list-style-position: outside;
+    padding-left:10px;
 }
 .collapse 
 {
@@ -67,13 +68,13 @@ ul.a
 {
     background-color: #4f4d4d; 
 } 
-.panel 
-{
+.content {
     padding: 0 18px;
-    display: none;
-    background-color: white;
+    max-height: 0;
     overflow: hidden;
-}
+    transition: max-height 0.2s ease-out;
+    background-color: white;
+  }  
 .collapse:after
 {
    content: '\22C1';

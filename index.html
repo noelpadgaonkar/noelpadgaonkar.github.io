@@ -12,7 +12,7 @@
 <body>
     <div>To obtain a creative and challenging position in your organization that gives me an opportunity for self-improvement and leadership, while contributing to the symbolic growth of the organization with my technical, innovative and logical skills.
     <h3 class="collapse">PERSONAL DETAILS</h3>
-    <div class="panel">
+    <div class="content">
     <table>    
         <tr>
             <td>DATE OF BIRTH: <span class="data">15 MAY, 1995</span></td>
@@ -30,7 +30,7 @@
     </div>
 
     <h3 class="collapse">EXPERIENCE</h3>
-    <div class="panel">
+    <div class="content">
     <table>
         <table>
             <tr>
@@ -59,7 +59,7 @@
     </div>
 
     <h3 class="collapse">EDUCATION</h3>
-    <div class="panel">
+    <div class="content">
     <table>
         <table>
             <tr>
@@ -100,7 +100,7 @@
     </div>
 
     <h3 class="collapse">SKILLS</h3>
-    <div class="panel">
+    <div class="content">
     <ul class="a">
     <table>
         <tr>
@@ -128,7 +128,7 @@
     </div>
 
     <h3 class="collapse">PROJECTS</h3>
-    <div class="panel">
+    <div class="content">
     <table>
         <table>
             <tr>
@@ -217,7 +217,7 @@
     </div>
 
     <h3 class="collapse">CO-CURRICULAR ACTIVITIES</h3>
-    <div class="panel">
+    <div class="content">
     <ul class="a">
     <table>
         <tr>
@@ -246,7 +246,7 @@
     </div>
 
     <h3 class="collapse">EXTRA-CURRICULAR ACTIVITIES</h3>
-    <div class="panel">
+    <div class="content">
     <ul class="a">
     <table>
         <tr>
@@ -272,18 +272,18 @@
     </div>
     </div>
     <script>
-        var acc = document.getElementsByClassName("collapse");
-        var i;       
-        for (i = 0; i < acc.length; i++) {
-          acc[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var panel = this.nextElementSibling;
-            if (panel.style.display === "block") {
-              panel.style.display = "none";
-            } else {
-              panel.style.display = "block";
-            }
-          });
+        var coll = document.getElementsByClassName("collapse");
+        var i;
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight){
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                } 
+            });
         }
     </script>
 </body>
