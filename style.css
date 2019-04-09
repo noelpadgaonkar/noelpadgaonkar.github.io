@@ -1,12 +1,30 @@
+@keyframes heading { 
+    0%
+    {
+        opacity: 0;
+    }
+    100%
+    {
+        opacity: 1;
+    }
+  }
+  @keyframes lines { 
+    from {left: -1500px;}
+  to {left: 0px;}
+  }
 h1
 {
     text-align: center;
-    color: grey
+    color: grey;
+    animation: heading 2s;
+    position: relative;
 }
 .address
 {
     text-align: center;
     font-size: small;
+    animation: heading 2s;
+    position: relative;
 }
 .surname
 {
@@ -17,11 +35,23 @@ h5
 {
     text-align: center; 
     color: green;
+    animation: heading 2s;
+    position: relative;
 }
-div
+hr
+{
+    animation: lines 2s;
+    position: relative;
+}
+.space
 {
     padding-left: 120px;
     padding-right: 120px;
+}
+.o
+{
+    animation: heading 3s;
+    position: relative;
 }
 td
 {
@@ -63,6 +93,8 @@ ul.a
     outline: none;
     font-size: 15px;
     transition: 0.4s;
+    display: none;
+    position: relative;
 }  
 .active,.collapse:hover 
 {

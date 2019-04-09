@@ -1,5 +1,5 @@
 <html>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <title>Noel Padgaonkar Resume</title>
 <head>
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -10,9 +10,9 @@
 </head>
 <hr \>
 <body>
-    <div>To obtain a creative and challenging position in your organization that gives me an opportunity for self-improvement and leadership, while contributing to the symbolic growth of the organization with my technical, innovative and logical skills.
-    <h3 class="collapse">PERSONAL DETAILS</h3>
-    <div class="content">
+    <div class="space"><span class="o">To obtain a creative and challenging position in your organization that gives me an opportunity for self-improvement and leadership, while contributing to the symbolic growth of the organization with my technical, innovative and logical skills.</span>  
+    <h3 id="div1" class="collapse">PERSONAL DETAILS</h3>
+    <div class="content space">
     <table>    
         <tr>
             <td>DATE OF BIRTH: <span class="data">15 MAY, 1995</span></td>
@@ -28,9 +28,8 @@
         </tr>        
     </table>
     </div>
-
-    <h3 class="collapse">EXPERIENCE</h3>
-    <div class="content">
+    <h3 id="div2" class="collapse">EXPERIENCE</h3>
+    <div class="content space">
     <table>
         <table>
             <tr>
@@ -58,8 +57,8 @@
     </table>
     </div>
 
-    <h3 class="collapse">EDUCATION</h3>
-    <div class="content">
+    <h3 id="div3" class="collapse">EDUCATION</h3>
+    <div class="content space">
     <table>
         <table>
             <tr>
@@ -99,8 +98,8 @@
     </table>
     </div>
 
-    <h3 class="collapse">SKILLS</h3>
-    <div class="content">
+    <h3 id="div4" class="collapse">SKILLS</h3>
+    <div class="content space">
     <ul class="a">
     <table>
         <tr>
@@ -127,8 +126,8 @@
     </ul>
     </div>
 
-    <h3 class="collapse">PROJECTS</h3>
-    <div class="content">
+    <h3 id="div5" class="collapse">PROJECTS</h3>
+    <div class="content space">
     <table>
         <table>
             <tr>
@@ -216,8 +215,8 @@
     </table>
     </div>
 
-    <h3 class="collapse">CO-CURRICULAR ACTIVITIES</h3>
-    <div class="content">
+    <h3 id="div6" class="collapse">CO-CURRICULAR ACTIVITIES</h3>
+    <div class="content space">
     <ul class="a">
     <table>
         <tr>
@@ -245,8 +244,8 @@
     </ul>
     </div>
 
-    <h3 class="collapse">EXTRA-CURRICULAR ACTIVITIES</h3>
-    <div class="content">
+    <h3 id="div7" class="collapse">EXTRA-CURRICULAR ACTIVITIES</h3>
+    <div class="content space">
     <ul class="a">
     <table>
         <tr>
@@ -282,9 +281,18 @@
                     content.style.maxHeight = null;
                 } else {
                     content.style.maxHeight = content.scrollHeight + "px";
-                } 
+                }   
             });
         }
+        $(document).ready(function(){
+            $("#div1").delay("1000").fadeIn();
+            $("#div2").delay("2000").fadeIn();
+            $("#div3").delay("3000").fadeIn();
+            $("#div4").delay("4000").fadeIn();
+            $("#div5").delay("5000").fadeIn();
+            $("#div6").delay("6000").fadeIn();
+            $("#div7").delay("7000").fadeIn();
+});
     </script>
 </body>
 </html>
