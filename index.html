@@ -6,11 +6,11 @@
     <h1>NOEL <span class="surname">PADGAONKAR</span></h1>
     <p class="address">1st Floor, Laukik Apartments, Next to Paradkar Hospital, Bhaskar Colony, Naupada, Thane (West) - 400602, Maharashtra, India<br /><b>(+91)9833692509</b>
     </p>
-    <h5>Email: noel6903@gmail.com &nbsp;&nbsp;&nbsp;LinkedIn Profile: <a href="http://www.linkedin.com/in/noel-padgaonkar-7524b0110/">http://www.linkedin.com/in/noel-padgaonkar-7524b0110/</a> </h5>
+    <h5>Email: <a href="mailto:noel6903@gmail.com">noel6903@gmail.com</a>&nbsp;&nbsp;&nbsp;LinkedIn Profile: <a href="http://www.linkedin.com/in/noel-padgaonkar-7524b0110/">http://www.linkedin.com/in/noel-padgaonkar-7524b0110/</a> </h5>
 </head>
 <hr \>
 <body>
-    <div class="space"><span class="o">To obtain a creative and challenging position in your organization that gives me an opportunity for self-improvement and leadership, while contributing to the symbolic growth of the organization with my technical, innovative and logical skills.</span>  
+    <div class="space"><span class="objective">To obtain a creative and challenging position in your organization that gives me an opportunity for self-improvement and leadership, while contributing to the symbolic growth of the organization with my technical, innovative and logical skills.</span>  
     <h3 id="div1" class="collapse">PERSONAL DETAILS</h3>
     <div class="content space">
     <table>    
@@ -285,14 +285,11 @@
             });
         }
         $(document).ready(function(){
-            $("#div1").delay("1000").fadeIn();
-            $("#div2").delay("2000").fadeIn();
-            $("#div3").delay("3000").fadeIn();
-            $("#div4").delay("4000").fadeIn();
-            $("#div5").delay("5000").fadeIn();
-            $("#div6").delay("6000").fadeIn();
-            $("#div7").delay("7000").fadeIn();
-});
+            $('h3').each(function (index,value) {
+                var k = document.getElementById($(this).attr('id'));
+                    $(k).delay(2000).delay(index*1000).animate({"bottom":"0px"});
+            });
+        });
     </script>
 </body>
 </html>
