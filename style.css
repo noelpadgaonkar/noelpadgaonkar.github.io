@@ -1,4 +1,4 @@
-@keyframes heading { 
+@keyframes name_address_email { 
     0%
     {
         opacity: 0;
@@ -7,28 +7,30 @@
     {
         opacity: 1;
     }
-  }
-  @keyframes lines { 
+}
+@keyframes heading_separator_line { 
     from {left: -1500px;}
-  to {left: 0px;}
-  }
-  @keyframes detail { 
-    from {bottom: -1000px;}
-  to {bottom: 0px;}
-  }
+    to {left: 0px;}
+}
+html
+{
+    overflow:scroll;
+}
 h1
 {
     text-align: center;
     color: grey;
-    animation: heading 2s;
+    animation: name_address_email 2s;
     position: relative;
+    display: block;
 }
 .address
 {
     text-align: center;
     font-size: small;
-    animation: heading 2s;
+    animation: name_address_email 2s;
     position: relative;
+    display: block;
 }
 .surname
 {
@@ -39,15 +41,16 @@ h5
 {
     text-align: center; 
     color: green;
-    animation: heading 2s;
+    animation: name_address_email 2s;
     position: relative;
+    display: block;
 }
 hr
 {
-    animation: lines 2s;
+    animation: heading_separator_line 2s;
     position: relative;
 }
-.space
+.spacing
 {
     padding-left: 120px;
     padding-right: 120px;
@@ -76,7 +79,7 @@ li
 {
     color: green;
 }
-.point
+.bullet_point
 {
     color: #4f4d4d;
 }
@@ -85,7 +88,7 @@ ul.a
     list-style-position: outside;
     padding-left:10px;
 }
-.collapse 
+.section_header 
 {
     background-color: gray;
     color: white;
@@ -100,7 +103,7 @@ ul.a
     position: relative;
     bottom:-1000px;
 }  
-.active,.collapse:hover 
+.active,.section_header:hover 
 {
     background-color: #4f4d4d; 
 } 
@@ -111,7 +114,7 @@ ul.a
     transition: max-height 0.2s ease-out;
     background-color: white;
   }  
-.collapse:after
+.section_header:after
 {
    content: '\22C1';
   color:white;
