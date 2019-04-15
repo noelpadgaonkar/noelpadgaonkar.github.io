@@ -286,7 +286,7 @@
         $(document).ready(function(){
             setTimeout(() => {$('h3').each(function (index,value) {
                 var k = document.getElementById($(this).attr('id'));
-                $(k).delay(index*1000).animate({"bottom":"0px"});
+                $(k).delay(index*1000).animate({"bottom":"0px","opacity":"1"},"slow");
             });},2000);
         });
     </script>
